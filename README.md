@@ -1,5 +1,8 @@
 # DataServiceLink
-这个是自己写的一个框架比较简单
+平台是 ubuntu16.04
+python 版本是python3.5
+开发环境是pycharm
+这个是自己写的一个框架
 主要功能就是
 1、单线程接收tcpserver的数据
 2、单线程添加数据进入redis
