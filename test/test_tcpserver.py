@@ -28,6 +28,6 @@ while True:
         tcpCliSock.send(msg.encode())
         print("server send to client data:",msg)
 
-        time.sleep(1)
+        time.sleep(0.05)
     tcpClisock.close()
 tcpSerSock.close()

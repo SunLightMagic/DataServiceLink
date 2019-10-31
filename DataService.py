@@ -12,8 +12,9 @@ port = 1885
 addr = (host,port)
 tcpclient=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 tcpclient.connect(addr)
-red = redis.Redis(host='127.0.0.1', port=6379,db=0, password=12345)
+redisPool = redis.ConnectionPool(host='localhost', port=6379,db=8, password=12345)
+redClient = redis.Redis(connection_pool=redisPool)
 while True:
     data = tcpclient.recv(1024)
-    #red.lpush("recivData",data)
-    print("recieved data from server:",data)
+    redClient.lpush("parkmsg",data.decode())
+    print("recieved data from server:",data.decode())
