@@ -1,6 +1,6 @@
 # DataServiceLink
-平台是 ubuntu16.04
-python 版本是python3.5
+平台是 ubuntu16.04\n
+python 版本是python3.5\n
 开发环境是pycharm
 这个是自己写的一个框架
 主要功能就是
